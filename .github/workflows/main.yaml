@@ -26,7 +26,7 @@ jobs:
           name: TFLint
           path: tflint-output.json
         if: always()                        # what is this for?
-
+  
   test:
     runs-on: ubuntu-20.04
     needs: build
