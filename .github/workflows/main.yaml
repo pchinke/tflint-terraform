@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-    tflint:
+  tflint:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -25,7 +25,7 @@ jobs:
         with:
           name: TFLint
           path: tflint-output.json
-        if: always()                        # what is this for?
+        if: always()
   
   test:
     runs-on: ubuntu-20.04
